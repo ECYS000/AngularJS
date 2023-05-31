@@ -1,0 +1,46 @@
+<div class="container main-container">
+<br>
+<br>
+<br>
+<br>
+
+
+<p>Nome: {{nome}} </p>
+<p>Nome: {{sobrenome}} </p>
+
+<br>
+<br>
+
+<!-- Pela propriedade -->
+<a [href]=linkSite>Link do site</a>
+<br>
+<button class="btn btn-primary" [disabled]="contador > 10" >TESTE</button>
+
+<!--<img [src]="linkImagem" alt="">-->
+
+
+
+<!-- Pelo evento -->
+
+
+
+<button class="btn btn-warning" (click)='adicionaUm()' >Mais +1</button>
+<button class="btn btn-warning" (click)='menosUm()' >Menos -1</button>
+<button class="btn btn-warning" (click)='zerar()' >zerar</button>
+<!--<button (click)='adicionaUm()'>Mais +1</button>
+<button (click)='menosUm()'>Menos - 1</button>-->
+
+<p>0 valor do contadoe é {{ contador }}</p>
+<br>
+
+<input type="text" (keyup)="teclar($event)" placeholder ='Digite o seu nome'>
+<br>
+<label > Seu nome é {{nome}}</label>
+<br>
+<input type="text" [(ngModel)]="nome" placeholder="Digite o seu nome" >
+<!-- Envio e Recebimento simulamento
+
+<button [(click)]="contador"> </button>
+<p>Nome do evento: {{ evento }}</p>-->
+</div>
+
